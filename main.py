@@ -279,7 +279,7 @@ class HierarchicalEmbeddingModel:
     # otherwise 'cpu' is safer.
         try:
             # Try loading directly to CPU first, often resolves this.
-            self.model = SentenceTransformer(model_name, device='cpu', local_files_only=True) # Modified line
+            self.model = SentenceTransformer(model_name, device='cpu') # Modified line
             print(f"SentenceTransformer loaded on CPU for model: {model_name} (local files only)")
         except Exception as e:
             print(f"Error loading SentenceTransformer on CPU with local_files_only=True: {e}. Trying default loading.")
