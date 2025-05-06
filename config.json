@@ -1,0 +1,73 @@
+{
+    "company_info": {
+        "name": "Your Company Name",
+        "logo_path": "",
+        "default_styles": {
+            "primary_color": "#003366",
+            "secondary_color": "#669933",
+            "font_family": "Arial"
+        }
+    },
+    "api_keys": {
+        "openai_key": "",
+        "google_api_key": ""
+    },
+    "knowledge_base": {
+        "directory": "markdown_responses",
+        "embedding_model": "all-MiniLM-L6-v2",
+        "metadata_fields": [
+            "client_industry",
+            "proposal_success",
+            "project_size",
+            "key_differentiators"
+        ]
+    },
+    "proposal_settings": {
+        "default_sections": [],
+        "max_tokens_per_section": 2000,
+        "templates": [
+            "Standard RFP",
+            "Technical RFP",
+            "Commercial RFP"
+        ]
+    },
+    "internal_capabilities": {
+        "technical": [
+            "Cloud solutions",
+            "AI implementation",
+            "Data analytics"
+        ],
+        "functional": [
+            "Project management",
+            "24/7 support",
+            "Custom development"
+        ]
+    },
+    "scoring_system": {
+        "weighting": {
+            "requirement_match": 0.4,
+            "compliance": 0.25,
+            "quality": 0.2,
+            "alignment": 0.15,
+            "risk": 0.1
+        },
+        "grading_scale": {
+            "excellent": [
+                90,
+                100
+            ],
+            "good": [
+                70,
+                89
+            ],
+            "fair": [
+                50,
+                69
+            ],
+            "poor": [
+                0,
+                49
+            ]
+        }
+    }
+}
