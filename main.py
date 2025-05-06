@@ -31,23 +31,6 @@ import unicodedata # Import unicodedata for advanced cleaning
 
 
 
-from sentence_transformers import SentenceTransformer
-import os
-
-model_name = "all-MiniLM-L6-v2" # Replace with your desired model name
-cache_dir = os.path.join(os.path.expanduser("~"), ".cache", "huggingface", "hub") # Default cache location
-
-print(f"Attempting to download model: {model_name}")
-print(f"Model will be cached in: {cache_dir}")
-
-try:
-    # This line will download the model if it's not already in the cache
-    model = SentenceTransformer(model_name)
-    print(f"Model {model_name} downloaded and cached successfully!")
-except Exception as e:
-    print(f"Error during download: {e}")
-    print("Please check your internet connection or try again.")
-
 # Helper function to remove problematic Unicode characters
 def remove_problematic_chars(text):
     """Removes characters that might cause encoding or display issues,
